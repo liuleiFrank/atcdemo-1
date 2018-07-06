@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<table>
+<tr th:each="test:${test}">
+<!-- 判断成绩 -->
+<td th:if=${test.Source} gt 0 and ${test.Score} lt 60 >差 </td>
+
+</tr>
+</table>
+</body>
+</html>
